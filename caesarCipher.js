@@ -1,9 +1,14 @@
-import { convertStringToAsciiArray } from "./utils.js";
+import {
+  convertAsciiArrayToString,
+  convertStringToAsciiArray,
+} from "./utils.js";
 
 export function caesarCipher(text, shift) {
   const asciis = convertStringToAsciiArray(text);
 
-  const newAsciis = asciis.map((num) => calculateNewPosition(num));
+  return convertAsciiArrayToString(
+    asciis.map((num) => calculateNewPosition(num, shift)),
+  );
 }
 
 function calculateNewPosition(asciiNum, shift) {
