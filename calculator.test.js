@@ -17,5 +17,7 @@ test("should roughly return 0.67, the quotient of 2 and 3", () => {
 });
 
 test("should throw", () => {
-  expect(calculator.divide(2, 0)).toThrow("Division through 0 is undefined");
+  expect(() => calculator.divide(2, 0)).toThrow(
+    "Division through 0 is undefined",
+  );
 });
