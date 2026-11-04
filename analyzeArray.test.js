@@ -1,6 +1,6 @@
 import { analyzeArray } from "./analyzeArray.js";
 
-const input = analyzeArray([1, 8, 3, 4, 2, 6]);
+const input = [1, 8, 3, 4, 2, 6];
 
 const expected = {
   average: 4,
