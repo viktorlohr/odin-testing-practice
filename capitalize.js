@@ -1,8 +1,6 @@
 export function capitalize(word) {
-  switch (word) {
-    case "foo":
-      return "Foo";
-    case "bar":
-      return "Bar";
-  }
+  const first = word.slice(0, 1);
+  const rest = word.slice(1);
+
+  return first.toUpperCase() + rest;
 }
