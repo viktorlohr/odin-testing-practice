@@ -4,7 +4,7 @@ export function convertStringToAsciiArray(text) {
 
 export function convertAsciiArrayToString(asciiArr) {
   return asciiArr.reduce(
-    (acc, asciiNum) => String.fromCharCode(asciiNum) + acc,
+    (acc, asciiNum) => acc + String.fromCharCode(asciiNum),
     "",
   );
 }
